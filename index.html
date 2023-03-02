@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="icon" href="images/icon.jpg" type="image/icon type">
+        <title>Password Generator</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <h1>Password Generator</h1>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div id="main-div">
+           <h1>Generate a <span id="text-el">Unique Password</span></h1>
+           <h2>Make your accounts secure with us.</h2>
+           <p>Length: <span id="num-el">8</span></p>
+           <input type="range" min="8" max="12" value="8" name="slider" id="slider-el"><br>
+           <button id="btn-el" onclick="getGeneratePassword()">Generate!</button>
+           <div id="secondary">
+              <input type="text" name="password1" class="password" value="Your Password" id="password1-el">
+              <input type="text" name="password2" class="password" value="Your Password" id="password2-el">
+           </div>
+        </div>
+        <footer>
+            <p>Product of Sheikh & Zarrar</p>
+        </footer>
+        
+        <script src="script.js" async defer></script>
+    </body>
+</html>
